@@ -121,7 +121,7 @@ function App() {
                             <tfoot>
                                 <tr>
                                     <th>Amount Payable</th>
-                                    <th>{receiptData.returnOn ? 0 : receiptData.fee}</th>
+                                    <th>Rs. {receiptData.returnOn ? 0 : receiptData.fee}</th>
                                 </tr>
                             </tfoot>
                         </table>
