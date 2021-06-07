@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import axios from 'axios';
 import './App.css';
 
@@ -7,6 +7,7 @@ function App() {
     const [receiptData, setReceiptData] = useState({});
     const [formData, setFormData] = useState(initialFormData);
     const [isLoading, setIsLoading] = useState(false);
+    const registrationNumberInputBox = useRef();
     const handleInputChange = event => {
         const { value } = event.target;
         setFormData({ ...formData, registrationNumber: value.toUpperCase() });
@@ -36,7 +37,7 @@ function App() {
             setReceiptData(data.data);
             setIsLoading(false);
             setFormData(initialFormData);
-            document.getElementsByName('registrationNumber')[0].focus();
+            registrationNumberInputBox.current.focus();
 
             return data;
         } catch (err) {
@@ -54,7 +55,7 @@ function App() {
                         <div className="fields">
                             <div className="field">
                                 <label>Registration Number</label>
-                                <input type="text" required autoFocus pattern="^[a-zA-Z0-9]{6,10}$" placeholder="Registration Number" name='registrationNumber' onChange={handleInputChange} value={formData.registrationNumber} />
+                                <input ref={registrationNumberInputBox} type="text" required autoFocus pattern="^[a-zA-Z0-9]{6,10}$" placeholder="Registration Number" name='registrationNumber' onChange={handleInputChange} value={formData.registrationNumber} />
                             </div>
                             <div className="field">
                                 <label>Direction</label>
