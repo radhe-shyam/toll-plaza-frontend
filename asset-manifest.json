@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/toll-plaza-frontend/static/css/main.ea1455b2.chunk.css",
-    "main.js": "/toll-plaza-frontend/static/js/main.bc86515b.chunk.js",
-    "main.js.map": "/toll-plaza-frontend/static/js/main.bc86515b.chunk.js.map",
+    "main.js": "/toll-plaza-frontend/static/js/main.b6b945d1.chunk.js",
+    "main.js.map": "/toll-plaza-frontend/static/js/main.b6b945d1.chunk.js.map",
     "runtime-main.js": "/toll-plaza-frontend/static/js/runtime-main.608faf56.js",
     "runtime-main.js.map": "/toll-plaza-frontend/static/js/runtime-main.608faf56.js.map",
     "static/js/2.13901651.chunk.js": "/toll-plaza-frontend/static/js/2.13901651.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.608faf56.js",
     "static/js/2.13901651.chunk.js",
     "static/css/main.ea1455b2.chunk.css",
-    "static/js/main.bc86515b.chunk.js"
+    "static/js/main.b6b945d1.chunk.js"
   ]
 }
